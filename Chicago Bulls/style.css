@@ -1,0 +1,158 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+  }
+  
+  img {
+    height: auto;
+    width: 100%;
+  }
+  
+  html {
+    font-size: 16px;
+  }
+
+  body {
+    padding: 0 20px;
+    margin: 0 auto;
+    max-width: 1280px;
+    font-family: "Calibri";
+  }
+
+  a, a:visited {
+    color: #B22222;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+nav {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav ul li {
+    text-align: center;
+    padding: 0.2em 1em;
+
+  }
+
+  nav ul li + li {
+    border-left: 1px solid #B22222;
+  }
+
+  h1 {
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 45px;
+  }
+
+  hr {
+    border: none;
+    background-color: black;
+    height: 1px;
+  }
+
+#hero-image {
+    height: 50vh;
+    object-fit: cover;
+  }
+
+#hero-text {
+    text-align: center;
+    color: black;
+    font-weight: 200px;
+    font-size: 64px;
+}
+
+.course-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.course-list article {
+    position: relative;
+}
+
+.mvp {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #B22222;
+    color: white;
+    padding: 5px 15px;
+}
+
+.course-image {
+    aspect-ratio: 1px;
+    object-fit: cover;
+}
+
+.player-title {
+    margin: 5px 0;
+    font-size: 18px;
+    color: black;
+    text-align: center;
+}
+
+#contact-heading {
+    text-align: center;
+    color: #B22222;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 48px;
+}
+
+input, textarea {
+    font-family: "Calibri";
+    border: 0;
+    border-bottom: 1px solid black;
+    font-size: 20px;
+    outline: none;
+    margin: 10px 0;
+    transition: border-bottom 150ms ease-out;
+    display: block;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+input:focus, textarea:focus {
+    border-bottom: 1px solid black;
+}
+
+button {
+     display: block;
+     border-radius: 6px;
+     text-align: center;
+     width: 100%;
+     border: 0;
+     background-color: #B22222;
+     color: white;
+     padding: 15px 0;
+     font-size: 18px;
+     cursor: pointer;
+}
+
+#form-two-columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
